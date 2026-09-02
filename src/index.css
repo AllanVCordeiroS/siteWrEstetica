@@ -267,7 +267,6 @@ body {
   border-radius: 14px;
   transition: var(--transition);
   position: relative;
-  overflow: hidden;
 }
 
 .card-dark:hover {
