@@ -25,8 +25,11 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
+  <!-- Tailwind CSS Browser CDN (Garante estilização imediata no GitHub Pages sem depender de servidor) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   <!-- Main Stylesheet (Tailwind CSS 4 + Custom Styles) -->
-  <link rel="stylesheet" href="/src/index.css" />
+  <link rel="stylesheet" href="./src/index.css" />
 </head>
 <body class="bg-[#050507] text-white antialiased selection:bg-blue-600 selection:text-white">
 
@@ -44,7 +47,7 @@
       <!-- Brand Logo -->
       <a href="#hero" class="flex items-center gap-3.5 group py-1" aria-label="WRestetica Início">
         <div class="relative flex-shrink-0">
-          <img src="/images/logo.png" 
+          <img src="./images/logo.png" 
                alt="WRestetica Logo" 
                class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-blue-400/50 shadow-lg shadow-blue-900/60 group-hover:border-blue-400 group-hover:scale-105 transition-all duration-300" />
           <div class="absolute inset-0 rounded-full bg-blue-500/10 pointer-events-none"></div>
@@ -121,7 +124,7 @@
     
     <!-- Background Image with Ambient Vignette -->
     <div class="absolute inset-0 z-0">
-      <img src="/images/hero.jpg" 
+      <img src="./images/hero.jpg" 
            alt="Supercarro preto em estúdio de detalhamento automotivo de alta tecnologia" 
            class="w-full h-full object-cover object-center opacity-30"
            referrerpolicy="no-referrer" />
@@ -474,7 +477,7 @@
           
           <!-- After Image (Background) -->
           <img id="after-image" 
-               src="/images/porsche-depois.jpg" 
+               src="./images/porsche-depois.jpg" 
                alt="Pintura após polimento técnico e vitrificação cerâmica WRestetica com acabamento espelhado" 
                class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
                referrerpolicy="no-referrer" />
@@ -486,7 +489,7 @@
           <!-- Before Image (Overlay with clipping) -->
           <div id="before-image-wrap" class="comparison-before-wrap">
             <img id="before-image" 
-                 src="/images/porsche-antes.jpg" 
+                 src="./images/porsche-antes.jpg" 
                  alt="Pintura com micro-riscos, hologramas e swirls antes do tratamento" 
                  class="absolute top-0 left-0 max-w-none h-full object-cover object-center pointer-events-none"
                  referrerpolicy="no-referrer" />
@@ -845,7 +848,7 @@
         
         <!-- Gallery 1 -->
         <div class="gallery-card group h-72" data-caption="Vitrificação Cerâmica 9H & Polimento Técnico em Supercarro no Estúdio WRestetica">
-          <img src="/images/gallery-supercar.jpg" 
+          <img src="./images/gallery-supercar.jpg" 
                alt="Supercarro preto em estúdio com reflexo espelhado e vitrificação 9H" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -857,7 +860,7 @@
 
         <!-- Gallery 2 -->
         <div class="gallery-card group h-72" data-caption="Efeito Lótus (Water Beading) - Hidro-repelência extrema e escoamento rápido de água em capô vitrificado">
-          <img src="/images/gallery-beading.jpg" 
+          <img src="./images/gallery-beading.jpg" 
                alt="Macro de gotas de água esféricas perfeitas em superfície com proteção cerâmica" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -869,7 +872,7 @@
 
         <!-- Gallery 3 -->
         <div class="gallery-card group h-72" data-caption="Interior Detailing - Higienização a vapor, hidratação profunda de couro legítimo e proteção UV">
-          <img src="/images/gallery-interior.jpg" 
+          <img src="./images/gallery-interior.jpg" 
                alt="Interior em couro hidratado e console detalhado de carro esportivo" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -881,7 +884,7 @@
 
         <!-- Gallery 4 -->
         <div class="gallery-card group h-72" data-caption="Inspeção Óptica de Precisão - Pintura corrigida e livre de micro-riscos sob luz técnica de LED">
-          <img src="/images/gallery-polishing.jpg" 
+          <img src="./images/gallery-polishing.jpg" 
                alt="Inspeção técnica com luz especial LED em pintura espelhada sem hologramas" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -893,7 +896,7 @@
 
         <!-- Gallery 5 -->
         <div class="gallery-card group h-72" data-caption="Rodas & Pinças de Freio - Descontaminação ferrosa profunda e coating cerâmico resistente a altas temperaturas">
-          <img src="/images/gallery-wheels.jpg" 
+          <img src="./images/gallery-wheels.jpg" 
                alt="Roda esportiva forjada preta com pinça de freio vermelha protegida com coating cerâmico" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -905,7 +908,7 @@
 
         <!-- Gallery 6 -->
         <div class="gallery-card group h-72" data-caption="Restauração de Óptica & Iluminação - Lentes de policarbonato 100% cristalinas com selagem UV definitiva">
-          <img src="/images/gallery-headlight.jpg" 
+          <img src="./images/gallery-headlight.jpg" 
                alt="Farol de LED de matriz cristalino e restaurado com selagem UV" 
                class="w-full h-full object-cover"
                referrerpolicy="no-referrer" />
@@ -1064,7 +1067,7 @@
         <div class="md:col-span-2 space-y-4">
           <a href="#hero" class="flex items-center gap-3.5 group">
             <div class="relative flex-shrink-0">
-              <img src="/images/logo.png" 
+              <img src="./images/logo.png" 
                    alt="WRestetica Logo" 
                    class="w-14 h-14 rounded-full object-cover border-2 border-blue-400/50 shadow-lg shadow-blue-900/60 group-hover:scale-105 transition-transform duration-300" />
             </div>
@@ -1169,6 +1172,6 @@
   </a>
 
   <!-- Main JavaScript File -->
-  <script type="module" src="/script.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
