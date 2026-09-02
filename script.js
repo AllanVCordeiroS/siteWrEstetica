@@ -282,7 +282,7 @@ function initWREstetica() {
 
       const whatsappText = `Ol%C3%A1%20WRestetica!%20Gostaria%20de%20um%20or%C3%A7amento%20personalizado:%0A%0A*Categoria%20do%20Carro:*%20${encodeURIComponent(selectedVehicleType)}%0A*Tratamentos%20Desejados:*%0A${servicesFormatted}%0A%0A*Estimativa%20no%20site:*%20R$%20${finalEstimatedPrice}%0A*Tempo%20estimado:*%20${encodeURIComponent(timeText)}%0A%0APor%20favor,%20qual%20a%20disponibilidade%20de%20hor%C3%A1rio?`;
 
-      calcWhatsappBtn.href = `https://wa.me/5500000000000?text=${whatsappText}`;
+      calcWhatsappBtn.href = `https://wa.me/5581984295003?text=${whatsappText}`;
     }
   };
 

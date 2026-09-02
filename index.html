@@ -282,7 +282,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- Service 1 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -310,7 +310,7 @@
         </div>
 
         <!-- Service 2 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -338,7 +338,7 @@
         </div>
 
         <!-- Service 3 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -366,7 +366,7 @@
         </div>
 
         <!-- Service 4 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -394,7 +394,7 @@
         </div>
 
         <!-- Service 5 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -422,7 +422,7 @@
         </div>
 
         <!-- Service 6 -->
-        <div class="card-dark p-8 flex flex-col justify-between group">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between group">
           <div>
             <div class="flex items-center justify-between mb-6">
               <div class="icon-box">
@@ -482,8 +482,9 @@
                class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
                referrerpolicy="no-referrer" />
           
-          <div class="absolute bottom-4 right-4 z-10 px-3 py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-blue-500/30 text-xs font-heading font-bold text-blue-400 tracking-wider">
-            DEPOIS (WRESTETICA)
+          <div class="absolute bottom-2.5 right-2.5 sm:bottom-4 sm:right-4 z-10 px-2 sm:px-3 py-1 sm:py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-blue-500/30 text-[10px] sm:text-xs font-heading font-bold text-blue-400 tracking-wider pointer-events-none">
+            <span class="sm:hidden">DEPOIS</span>
+            <span class="hidden sm:inline">DEPOIS (WRESTETICA)</span>
           </div>
 
           <!-- Before Image (Overlay with clipping) -->
@@ -494,8 +495,9 @@
                  class="absolute top-0 left-0 max-w-none h-full object-cover object-center pointer-events-none"
                  referrerpolicy="no-referrer" />
             
-            <div class="absolute bottom-4 left-4 z-20 px-3 py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-white/20 text-xs font-heading font-bold text-gray-300 tracking-wider">
-              ANTES (COM RISCOS)
+            <div class="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 z-20 px-2 sm:px-3 py-1 sm:py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-white/20 text-[10px] sm:text-xs font-heading font-bold text-gray-300 tracking-wider pointer-events-none">
+              <span class="sm:hidden">ANTES</span>
+              <span class="hidden sm:inline">ANTES (COM RISCOS)</span>
             </div>
           </div>
 
@@ -522,16 +524,16 @@
     <div class="container-custom">
       
       <div class="max-w-4xl mx-auto">
-        <div class="card-dark p-8 sm:p-12 border-blue-500/20 shadow-2xl shadow-blue-950/20">
+        <div class="card-dark p-4 sm:p-8 md:p-12 border-blue-500/20 shadow-2xl shadow-blue-950/20">
           
-          <div class="text-center mb-10">
+          <div class="text-center mb-8 sm:mb-10">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
               Simulação Instantânea
             </div>
             <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-white tracking-tight mb-2">
               CALCULADORA DE ORÇAMENTO RÁPIDO
             </h2>
-            <p class="text-gray-400 text-sm">
+            <p class="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto">
               Selecione o porte do seu veículo e os serviços desejados para gerar uma estimativa personalizada com envio direto para o WhatsApp.
             </p>
           </div>
@@ -541,36 +543,38 @@
             <label class="block text-xs font-heading font-bold text-gray-300 uppercase tracking-wider mb-3">
               1. Selecione a Categoria do Veículo:
             </label>
-            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3" id="vehicle-types">
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3" id="vehicle-types">
               
-              <button type="button" class="calc-step-btn vehicle-btn selected" data-type="Hatchback / Compacto" data-multiplier="1.0">
-                <i data-lucide="car" class="w-5 h-5 text-blue-400 mb-2"></i>
+              <button type="button" class="calc-step-btn vehicle-btn selected flex flex-col items-start justify-center" data-type="Hatchback / Compacto" data-multiplier="1.0">
+                <i data-lucide="car" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mb-1.5 sm:mb-2"></i>
                 <div class="text-xs font-bold text-white leading-tight">Hatch</div>
-                <div class="text-[10px] text-gray-400">Ex: Polo, Onix, HB20</div>
+                <div class="text-[10px] text-gray-400">Polo, Onix, HB20</div>
               </button>
 
-              <button type="button" class="calc-step-btn vehicle-btn" data-type="Sedan / Médio" data-multiplier="1.15">
-                <i data-lucide="car" class="w-5 h-5 text-blue-400 mb-2"></i>
+              <button type="button" class="calc-step-btn vehicle-btn flex flex-col items-start justify-center" data-type="Sedan / Médio" data-multiplier="1.15">
+                <i data-lucide="car" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mb-1.5 sm:mb-2"></i>
                 <div class="text-xs font-bold text-white leading-tight">Sedan</div>
-                <div class="text-[10px] text-gray-400">Ex: Civic, Corolla, BMW 3</div>
+                <div class="text-[10px] text-gray-400">Civic, Corolla, BMW 3</div>
               </button>
 
-              <button type="button" class="calc-step-btn vehicle-btn" data-type="SUV / Crossover" data-multiplier="1.3">
-                <i data-lucide="truck" class="w-5 h-5 text-blue-400 mb-2"></i>
+              <button type="button" class="calc-step-btn vehicle-btn flex flex-col items-start justify-center" data-type="SUV / Crossover" data-multiplier="1.3">
+                <i data-lucide="truck" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mb-1.5 sm:mb-2"></i>
                 <div class="text-xs font-bold text-white leading-tight">SUV</div>
-                <div class="text-[10px] text-gray-400">Ex: Compass, Creta, X1</div>
+                <div class="text-[10px] text-gray-400">Compass, Creta, X1</div>
               </button>
 
-              <button type="button" class="calc-step-btn vehicle-btn" data-type="Pick-up / Grande" data-multiplier="1.5">
-                <i data-lucide="truck" class="w-5 h-5 text-blue-400 mb-2"></i>
+              <button type="button" class="calc-step-btn vehicle-btn flex flex-col items-start justify-center" data-type="Pick-up / Grande" data-multiplier="1.5">
+                <i data-lucide="truck" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mb-1.5 sm:mb-2"></i>
                 <div class="text-xs font-bold text-white leading-tight">Pick-up</div>
-                <div class="text-[10px] text-gray-400">Ex: Hilux, Ranger, RAM</div>
+                <div class="text-[10px] text-gray-400">Hilux, Ranger, RAM</div>
               </button>
 
-              <button type="button" class="calc-step-btn vehicle-btn" data-type="Superesportivo / Cupê" data-multiplier="1.4">
-                <i data-lucide="gauge" class="w-5 h-5 text-blue-400 mb-2"></i>
-                <div class="text-xs font-bold text-white leading-tight">Esportivo</div>
-                <div class="text-[10px] text-gray-400">Ex: Porsche, Mustang</div>
+              <button type="button" class="calc-step-btn vehicle-btn col-span-2 sm:col-span-1 flex flex-row sm:flex-col items-center sm:items-start gap-2.5 sm:gap-0 justify-center sm:justify-start" data-type="Superesportivo / Cupê" data-multiplier="1.4">
+                <i data-lucide="gauge" class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mb-0 sm:mb-2"></i>
+                <div class="text-left">
+                  <div class="text-xs font-bold text-white leading-tight">Esportivo</div>
+                  <div class="text-[10px] text-gray-400">Porsche, Mustang</div>
+                </div>
               </button>
 
             </div>
@@ -581,65 +585,65 @@
             <label class="block text-xs font-heading font-bold text-gray-300 uppercase tracking-wider mb-3">
               2. Escolha os Tratamentos Desejados:
             </label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="service-options">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" id="service-options">
               
               <div class="calc-step-btn service-btn selected" data-id="lavagem" data-base="149" data-name="Lavagem Detalhada Premium" data-time="3 horas" role="checkbox" tabindex="0" aria-checked="true">
-                <div class="flex items-start justify-between">
-                  <div class="flex items-center gap-3">
-                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                <div class="flex items-center justify-between gap-2.5">
+                  <div class="flex items-center gap-2.5 min-w-0">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex-shrink-0 flex items-center justify-center text-xs">
                       <i data-lucide="check" class="w-3.5 h-3.5"></i>
                     </div>
-                    <div>
-                      <div class="text-sm font-bold text-white">Lavagem Detalhada Premium</div>
-                      <div class="text-xs text-gray-400">Snow foam, rodas, descontaminação</div>
+                    <div class="min-w-0">
+                      <div class="text-xs sm:text-sm font-bold text-white truncate">Lavagem Detalhada</div>
+                      <div class="text-[11px] text-gray-400 truncate">Snow foam, rodas, descontaminação</div>
                     </div>
                   </div>
-                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 149</span>
+                  <span class="text-xs font-heading font-bold text-blue-400 whitespace-nowrap flex-shrink-0">a partir R$ 149</span>
                 </div>
               </div>
 
               <div class="calc-step-btn service-btn selected" data-id="polimento" data-base="350" data-name="Polimento Técnico de Correção" data-time="1 a 2 dias" role="checkbox" tabindex="0" aria-checked="true">
-                <div class="flex items-start justify-between">
-                  <div class="flex items-center gap-3">
-                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                <div class="flex items-center justify-between gap-2.5">
+                  <div class="flex items-center gap-2.5 min-w-0">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex-shrink-0 flex items-center justify-center text-xs">
                       <i data-lucide="check" class="w-3.5 h-3.5"></i>
                     </div>
-                    <div>
-                      <div class="text-sm font-bold text-white">Polimento Técnico</div>
-                      <div class="text-xs text-gray-400">Eliminação de micro-riscos e brilho</div>
+                    <div class="min-w-0">
+                      <div class="text-xs sm:text-sm font-bold text-white truncate">Polimento Técnico</div>
+                      <div class="text-[11px] text-gray-400 truncate">Eliminação de marcas e brilho</div>
                     </div>
                   </div>
-                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 350</span>
+                  <span class="text-xs font-heading font-bold text-blue-400 whitespace-nowrap flex-shrink-0">a partir R$ 350</span>
                 </div>
               </div>
 
               <div class="calc-step-btn service-btn" data-id="vitrificacao" data-base="490" data-name="Vitrificação Cerâmica 9H (3 Anos)" data-time="1 dia" role="checkbox" tabindex="0" aria-checked="false">
-                <div class="flex items-start justify-between">
-                  <div class="flex items-center gap-3">
-                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                <div class="flex items-center justify-between gap-2.5">
+                  <div class="flex items-center gap-2.5 min-w-0">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex-shrink-0 flex items-center justify-center text-xs">
                       <i data-lucide="check" class="w-3.5 h-3.5"></i>
                     </div>
-                    <div>
-                      <div class="text-sm font-bold text-white">Vitrificação Cerâmica 9H</div>
-                      <div class="text-xs text-gray-400">Nano-proteção hidrofóbica extrema</div>
+                    <div class="min-w-0">
+                      <div class="text-xs sm:text-sm font-bold text-white truncate">Vitrificação 9H</div>
+                      <div class="text-[11px] text-gray-400 truncate">Proteção cerâmica extrema</div>
                     </div>
                   </div>
-                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 490</span>
+                  <span class="text-xs font-heading font-bold text-blue-400 whitespace-nowrap flex-shrink-0">a partir R$ 490</span>
                 </div>
               </div>
 
               <div class="calc-step-btn service-btn" data-id="interna" data-base="220" data-name="Higienização & Detalhamento Interno" data-time="4 horas" role="checkbox" tabindex="0" aria-checked="false">
-                <div class="flex items-start justify-between">
-                  <div class="flex items-center gap-3">
-                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                <div class="flex items-center justify-between gap-2.5">
+                  <div class="flex items-center gap-2.5 min-w-0">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex-shrink-0 flex items-center justify-center text-xs">
                       <i data-lucide="check" class="w-3.5 h-3.5"></i>
                     </div>
-                    <div>
-                      <div class="text-sm font-bold text-white">Higienização Interna Completa</div>
-                      <div class="text-xs text-gray-400">Vapor, couro, oxi-sanitização</div>
+                    <div class="min-w-0">
+                      <div class="text-xs sm:text-sm font-bold text-white truncate">Higienização Interna</div>
+                      <div class="text-[11px] text-gray-400 truncate">Vapor, couro, oxi-sanitização</div>
                     </div>
                   </div>
-                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 220</span>
+                  <span class="text-xs font-heading font-bold text-blue-400 whitespace-nowrap flex-shrink-0">a partir R$ 220</span>
                 </div>
               </div>
 
@@ -647,22 +651,23 @@
           </div>
 
           <!-- Calculator Summary Output -->
-          <div class="p-6 rounded-xl bg-black/60 border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div>
-              <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Estimativa de Investimento:</div>
-              <div class="flex items-baseline gap-2">
+          <div class="p-4 sm:p-6 rounded-xl bg-black/60 border border-blue-500/30 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-5">
+            <div class="space-y-1">
+              <div class="text-[11px] sm:text-xs text-gray-400 uppercase tracking-wider">Estimativa de Investimento:</div>
+              <div class="flex items-baseline gap-2 flex-wrap">
                 <span class="text-3xl sm:text-4xl font-heading font-black text-white" id="calc-total-price">R$ 499</span>
                 <span class="text-xs text-blue-400 font-semibold" id="calc-estimate-label">(estimativa base)</span>
               </div>
-              <div class="text-xs text-gray-400 mt-1 flex items-center gap-1.5">
-                <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-400"></i>
-                <span>Tempo de execução estimado: <strong class="text-white" id="calc-total-time">1 a 2 dias</strong></span>
+              <div class="text-xs text-gray-400 flex items-start gap-1.5 leading-snug pt-0.5">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0 mt-0.5"></i>
+                <span>Tempo de execução: <strong class="text-white font-medium" id="calc-total-time">1 a 2 dias (inclui cura técnica)</strong></span>
               </div>
             </div>
 
-            <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn-primary w-full sm:w-auto text-center justify-center whitespace-nowrap">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              <span>ENVIAR ORÇAMENTO NO WHATSAPP</span>
+            <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn-primary w-full sm:w-auto text-center justify-center py-3 px-4 sm:px-6 text-xs sm:text-sm font-heading font-bold uppercase tracking-wider shadow-lg shadow-blue-600/30 flex-shrink-0">
+              <i data-lucide="send" class="w-4 h-4 flex-shrink-0"></i>
+              <span class="sm:hidden">ENVIAR NO WHATSAPP</span>
+              <span class="hidden sm:inline">ENVIAR ORÇAMENTO NO WHATSAPP</span>
             </a>
           </div>
 
@@ -693,7 +698,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
         
         <!-- Tier 1: Essencial -->
-        <div class="card-dark p-8 flex flex-col justify-between">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between">
           <div>
             <div class="text-xs font-heading font-bold text-gray-400 uppercase tracking-widest mb-2">Manutenção</div>
             <h3 class="text-2xl font-heading font-extrabold text-white mb-2">ESSENCIAL</h3>
@@ -731,7 +736,7 @@
         </div>
 
         <!-- Tier 2: Premium (Featured) -->
-        <div class="card-dark overflow-visible p-8 flex flex-col justify-between relative border-blue-500/50 shadow-2xl shadow-blue-950/40 bg-gradient-to-b from-blue-950/20 to-transparent">
+        <div class="card-dark overflow-visible p-5 sm:p-8 flex flex-col justify-between relative border-blue-500/50 shadow-2xl shadow-blue-950/40 bg-gradient-to-b from-blue-950/20 to-transparent">
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-blue-600 text-white font-heading font-bold text-[10px] uppercase tracking-widest shadow-lg shadow-blue-600/40 z-10 whitespace-nowrap">
             MAIS ESCOLHIDO
           </div>
@@ -777,7 +782,7 @@
         </div>
 
         <!-- Tier 3: WR Signature -->
-        <div class="card-dark p-8 flex flex-col justify-between">
+        <div class="card-dark p-5 sm:p-8 flex flex-col justify-between">
           <div>
             <div class="text-xs font-heading font-bold text-gray-400 uppercase tracking-widest mb-2">Proteção Absoluta</div>
             <h3 class="text-2xl font-heading font-extrabold text-white mb-2">WR SIGNATURE</h3>

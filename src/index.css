@@ -40,6 +40,8 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -47,6 +49,7 @@ body {
   color: var(--white);
   font-family: var(--font-body);
   overflow-x: hidden;
+  max-width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -208,6 +211,14 @@ body {
   transform: translateY(-2px);
 }
 
+@media (max-width: 640px) {
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 1.125rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+}
+
 .btn-secondary {
   display: inline-flex;
   align-items: center;
@@ -302,7 +313,7 @@ body {
 .comparison-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 280px;
   overflow: hidden;
   border-radius: 14px;
   border: 1px solid var(--border-subtle);
@@ -311,9 +322,15 @@ body {
   cursor: ew-resize;
 }
 
+@media (min-width: 640px) {
+  .comparison-container {
+    height: 380px;
+  }
+}
+
 @media (min-width: 768px) {
   .comparison-container {
-    height: 500px;
+    height: 480px;
   }
 }
 
@@ -334,8 +351,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--electric-blue);
   border: 3px solid var(--white);
@@ -348,15 +365,28 @@ body {
   pointer-events: none;
 }
 
+@media (min-width: 640px) {
+  .comparison-handle {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* --- Interactive Budget Calculator --- */
 .calc-step-btn {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: left;
   cursor: pointer;
   transition: var(--transition);
+}
+
+@media (min-width: 640px) {
+  .calc-step-btn {
+    padding: 1rem;
+  }
 }
 
 .calc-step-btn:hover {
