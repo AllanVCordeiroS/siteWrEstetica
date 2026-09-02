@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Metadata -->
+  <title>WRestetica | Estética Automotiva de Alta Performance</title>
+  <meta name="description" content="WRestetica: Estética automotiva de alto padrão, polimento técnico, vitrificação cerâmica 9H e higienização interna premium. Transforme e proteja seu veículo." />
+  <meta name="keywords" content="WRestetica, WR estética automotiva, estética automotiva, polimento técnico, vitrificação, ceramic coating, lavagem detalhada, higienização, proteção de pintura" />
+  <meta name="author" content="WRestetica Automotiva" />
+  <meta name="theme-color" content="#050507" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WRestetica | Estética Automotiva de Alta Performance" />
+  <meta property="og:description" content="Estética automotiva de alto padrão, polimento técnico, vitrificação cerâmica 9H e higienização interna premium na WRestetica." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Google Fonts: Montserrat & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet (Tailwind CSS 4 + Custom Styles) -->
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+<body class="bg-[#050507] text-white antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Ambient Background Glows -->
+  <div class="glow-orb glow-blue w-[600px] h-[600px] top-[-100px] right-[-100px]"></div>
+  <div class="glow-orb glow-cyan w-[500px] h-[500px] top-[30%] left-[-150px]"></div>
+  <div class="glow-orb glow-blue w-[700px] h-[700px] bottom-[10%] right-[-100px]"></div>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <header id="main-header" class="site-header fixed top-0 left-0 w-full z-50">
+    <div class="container-custom flex items-center justify-between h-20">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3.5 group py-1" aria-label="WRestetica Início">
+        <div class="relative flex-shrink-0">
+          <img src="/images/logo.png" 
+               alt="WRestetica Logo" 
+               class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-blue-400/50 shadow-lg shadow-blue-900/60 group-hover:border-blue-400 group-hover:scale-105 transition-all duration-300" />
+          <div class="absolute inset-0 rounded-full bg-blue-500/10 pointer-events-none"></div>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="flex items-center">
+            <span class="font-heading font-black tracking-wider text-xl md:text-2xl text-white group-hover:text-blue-400 transition-colors leading-none">WR</span>
+            <span class="font-heading font-light tracking-wide text-lg md:text-xl text-gray-200 leading-none ml-1">estética</span>
+          </div>
+          <span class="text-[9px] md:text-[10px] tracking-[0.28em] text-blue-400 font-extrabold uppercase mt-1">AUTOMOTIVA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Navegação Principal">
+        <a href="#hero" class="nav-link">Início</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#comparacao" class="nav-link">Antes & Depois</a>
+        <a href="#calculadora" class="nav-link">Orçamento</a>
+        <a href="#planos" class="nav-link">Planos</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20WRestetica!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20est%C3%A9tica%20automotiva." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-book-nav">
+          <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-400"></i>
+          <span>AGENDAR HORÁRIO</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" 
+              class="lg:hidden flex flex-col items-center justify-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-white p-2.5 focus:outline-none"
+              aria-label="Abrir Menu"
+              aria-expanded="false">
+        <span class="hamburger-line line-1 w-5 h-0.5 bg-white block mb-1"></span>
+        <span class="hamburger-line line-2 w-5 h-0.5 bg-white block mb-1"></span>
+        <span class="hamburger-line line-3 w-5 h-0.5 bg-white block"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobile-menu" class="lg:hidden flex flex-col justify-between p-6">
+    <div class="flex flex-col gap-5 pt-6">
+      <a href="#hero" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Início</a>
+      <a href="#servicos" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Serviços</a>
+      <a href="#comparacao" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Antes & Depois</a>
+      <a href="#calculadora" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Calculadora de Orçamento</a>
+      <a href="#planos" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Planos & Preços</a>
+      <a href="#galeria" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2 border-b border-white/5">Galeria</a>
+      <a href="#faq" class="mobile-nav-link text-lg font-heading font-bold text-gray-300 hover:text-blue-400 py-2">Perguntas Frequentes</a>
+    </div>
+    
+    <div class="pt-6 border-t border-white/10">
+      <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20WRestetica!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." 
+         target="_blank" 
+         class="btn-primary w-full py-3.5 text-center justify-center">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>FALAR NO WHATSAPP</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center pt-28 pb-16 overflow-hidden">
+    
+    <!-- Background Image with Ambient Vignette -->
+    <div class="absolute inset-0 z-0">
+      <img src="/images/hero.jpg" 
+           alt="Supercarro preto em estúdio de detalhamento automotivo de alta tecnologia" 
+           class="w-full h-full object-cover object-center opacity-30"
+           referrerpolicy="no-referrer" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#050507] via-[#050507]/80 to-[#050507]/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#050507] via-[#050507]/60 to-transparent"></div>
+    </div>
+
+    <div class="container-custom relative z-10 w-full">
+      <div class="max-w-3xl">
+        
+        <!-- Premium Badge -->
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-950/60 border border-blue-500/30 backdrop-blur-md mb-6">
+          <span class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_#0066ff] animate-pulse"></span>
+          <span class="text-xs font-heading font-semibold tracking-wider text-blue-300 uppercase">Estética Automotiva de Alta Performance</span>
+        </div>
+
+        <!-- Hero Headline -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+          SEU CARRO MERECE MAIS QUE UMA <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-blue-500">LAVAGEM COMUM.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg text-gray-300 font-normal leading-relaxed mb-8 max-w-2xl">
+          Restauração minuciosa, correção de pintura técnica e proteção cerâmica 9H de longa duração para proprietários que não aceitam nada menos que o impecável.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20WRestetica!%20Gostaria%20de%20agendar%20um%20servi%C3%A7o%20para%20o%20meu%20carro." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-primary">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>AGENDAR MEU SERVIÇO</span>
+          </a>
+          
+          <a href="#calculadora" class="btn-secondary">
+            <i data-lucide="calculator" class="w-4 h-4 text-blue-400"></i>
+            <span>SIMULAR ORÇAMENTO</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-white/10">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-white leading-tight">Garantia Real</span>
+              <span class="text-[11px] text-gray-400">Até 3 anos</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-white leading-tight">Produtos Top</span>
+              <span class="text-[11px] text-gray-400">100% Importados</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+              <i data-lucide="award" class="w-4 h-4"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-white leading-tight">Certificados</span>
+              <span class="text-[11px] text-gray-400">Detailers IDA</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+              <i data-lucide="star" class="w-4 h-4 text-amber-400"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs font-bold text-white leading-tight">5.0 Estrelas</span>
+              <span class="text-[11px] text-gray-400">Google Reviews</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       STATS COUNTER BAR
+       ========================================================================= -->
+  <section id="trust-bar" class="py-10 bg-black/60 border-y border-white/5 relative z-10">
+    <div class="container-custom">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        
+        <div class="stat-item">
+          <div class="flex items-baseline justify-center gap-0.5">
+            <span class="stat-num counter" data-target="500">0</span>
+            <span class="text-2xl font-bold text-blue-500">+</span>
+          </div>
+          <span class="stat-label">Veículos Transformados</span>
+        </div>
+
+        <div class="stat-item">
+          <div class="flex items-baseline justify-center gap-0.5">
+            <span class="stat-num">5.0</span>
+            <span class="text-xl text-amber-400 ml-1">★</span>
+          </div>
+          <span class="stat-label">Avaliação Máxima</span>
+        </div>
+
+        <div class="stat-item">
+          <div class="flex items-baseline justify-center gap-0.5">
+            <span class="stat-num counter" data-target="10">0</span>
+            <span class="text-2xl font-bold text-blue-500">+</span>
+          </div>
+          <span class="stat-label">Anos de Experiência</span>
+        </div>
+
+        <div class="stat-item">
+          <div class="flex items-baseline justify-center gap-0.5">
+            <span class="stat-num">100</span>
+            <span class="text-2xl font-bold text-blue-500">%</span>
+          </div>
+          <span class="stat-label">Precisão & Satisfação</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SERVICES GRID (ORGANIZED ICONS & SIMPLE CARDS)
+       ========================================================================= -->
+  <section id="servicos" class="py-24 relative z-10">
+    <div class="container-custom">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+            Nossos Serviços
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight">
+            CUIDADOS DE PRECISÃO PARA CADA DETALHE
+          </h2>
+        </div>
+        <p class="text-gray-400 text-sm md:text-base max-w-md">
+          Utilizamos produtos químicos de ponta, processos não invasivos e iluminação técnica de inspeção para resultados incomparáveis.
+        </p>
+      </div>
+
+      <!-- 6 Organized Services Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Service 1 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="sparkles" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">01</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Polimento Técnico & Correção
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Eliminação de 90% a 98% dos micro-riscos (swirls), marcas de lavagem incorreta e oxidações. Devolve a profundidade e a reflexão espelhada da pintura.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Medição micrométrica de verniz</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Corte, refino e lustro técnico</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">02</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Vitrificação Cerâmica 9H
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Aplicação de nano-revestimento cerâmico de alta dureza. Cria uma camada protetora com hidro-repelência extrema, proteção UV e brilho vitrificado.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Durabilidade certificada de 1 a 3 anos</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Facilidade extrema em lavagens futuras</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="sparkle" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">03</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Higienização & Detalhe Interno
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Descontaminação a vapor térmico em todos os tecidos, carpetes e teto. Hidratação e nutrição profunda de couros com proteção bactericida.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Oxi-sanitização contra fungos e ácaros</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Toque acetinado e aroma exclusivo</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="droplets" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">04</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Lavagem Detalhada WRestetica
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Processo de lavagem seguro sem atrito. Snow foam de pH neutro, luvas de microfibra de alta densidade e limpeza milimétrica de emblemas e rodas.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Descontaminação ferrosa de rodas e caixas</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Secagem com ar comprimido aquecido</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="layers" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">05</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Proteção de Pintura & PPF
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Aplicação de selantes sintéticos de alto rendimento e películas de poliuretano com propriedades auto-regenerativas contra pedriscos e riscos.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Proteção física invisível de alto impacto</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Auto-cura de arranhões com calor</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card-dark p-8 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="icon-box">
+                <i data-lucide="sun" class="w-6 h-6"></i>
+              </div>
+              <span class="text-xs font-heading font-bold text-blue-400/80 tracking-widest uppercase">06</span>
+            </div>
+            <h3 class="text-xl font-heading font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+              Revitalização de Faróis & Plásticos
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Restauração da transparência óptica original de lentes foscas ou amareladas com selagem UV definitiva, além de restauração de polímeros externos.
+            </p>
+          </div>
+          <ul class="text-xs text-gray-300 space-y-2 pt-4 border-t border-white/5">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Aumento de até 60% na iluminação noturna</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-blue-400 flex-shrink-0"></i>
+              <span>Proteção cerâmica contra novo amarelamento</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BEFORE & AFTER INTERACTIVE COMPARISON
+       ========================================================================= -->
+  <section id="comparacao" class="py-20 bg-[#080a0f] border-y border-white/5 relative z-10">
+    <div class="container-custom">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+          Transformação Real
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight mb-4">
+          O RESULTADO WRESTETICA ANTES & DEPOIS
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base">
+          Arraste a linha central para comparar a superfície da pintura sob luz técnica: micro-riscos, teias de aranha (swirls) e verniz opaco antes da correção versus o espelhamento de alto brilho e vitrificação 9H WRestetica.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- Interactive Comparison Slider -->
+        <div id="comparison-slider" class="comparison-container shadow-2xl shadow-black/80">
+          
+          <!-- After Image (Background) -->
+          <img id="after-image" 
+               src="/images/porsche-depois.jpg" 
+               alt="Pintura após polimento técnico e vitrificação cerâmica WRestetica com acabamento espelhado" 
+               class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
+               referrerpolicy="no-referrer" />
+          
+          <div class="absolute bottom-4 right-4 z-10 px-3 py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-blue-500/30 text-xs font-heading font-bold text-blue-400 tracking-wider">
+            DEPOIS (WRESTETICA)
+          </div>
+
+          <!-- Before Image (Overlay with clipping) -->
+          <div id="before-image-wrap" class="comparison-before-wrap">
+            <img id="before-image" 
+                 src="/images/porsche-antes.jpg" 
+                 alt="Pintura com micro-riscos, hologramas e swirls antes do tratamento" 
+                 class="absolute top-0 left-0 max-w-none h-full object-cover object-center pointer-events-none"
+                 referrerpolicy="no-referrer" />
+            
+            <div class="absolute bottom-4 left-4 z-20 px-3 py-1.5 rounded-md bg-black/70 backdrop-blur-md border border-white/20 text-xs font-heading font-bold text-gray-300 tracking-wider">
+              ANTES (COM RISCOS)
+            </div>
+          </div>
+
+          <!-- Draggable Handle -->
+          <div id="slider-handle" class="comparison-handle">
+            <i data-lucide="chevrons-left-right" class="w-5 h-5"></i>
+          </div>
+
+        </div>
+
+        <div class="flex items-center justify-center gap-2 mt-4 text-xs text-gray-400">
+          <i data-lucide="move-horizontal" class="w-4 h-4 text-blue-400"></i>
+          <span>Toque ou arraste para interagir</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE BUDGET CALCULATOR (FAST QUOTE GENERATOR)
+       ========================================================================= -->
+  <section id="calculadora" class="py-24 relative z-10">
+    <div class="container-custom">
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="card-dark p-8 sm:p-12 border-blue-500/20 shadow-2xl shadow-blue-950/20">
+          
+          <div class="text-center mb-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+              Simulação Instantânea
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-heading font-extrabold text-white tracking-tight mb-2">
+              CALCULADORA DE ORÇAMENTO RÁPIDO
+            </h2>
+            <p class="text-gray-400 text-sm">
+              Selecione o porte do seu veículo e os serviços desejados para gerar uma estimativa personalizada com envio direto para o WhatsApp.
+            </p>
+          </div>
+
+          <!-- Step 1: Vehicle Size -->
+          <div class="mb-8">
+            <label class="block text-xs font-heading font-bold text-gray-300 uppercase tracking-wider mb-3">
+              1. Selecione a Categoria do Veículo:
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3" id="vehicle-types">
+              
+              <button type="button" class="calc-step-btn vehicle-btn selected" data-type="Hatchback / Compacto" data-multiplier="1.0">
+                <i data-lucide="car" class="w-5 h-5 text-blue-400 mb-2"></i>
+                <div class="text-xs font-bold text-white leading-tight">Hatch</div>
+                <div class="text-[10px] text-gray-400">Ex: Polo, Onix, HB20</div>
+              </button>
+
+              <button type="button" class="calc-step-btn vehicle-btn" data-type="Sedan / Médio" data-multiplier="1.15">
+                <i data-lucide="car" class="w-5 h-5 text-blue-400 mb-2"></i>
+                <div class="text-xs font-bold text-white leading-tight">Sedan</div>
+                <div class="text-[10px] text-gray-400">Ex: Civic, Corolla, BMW 3</div>
+              </button>
+
+              <button type="button" class="calc-step-btn vehicle-btn" data-type="SUV / Crossover" data-multiplier="1.3">
+                <i data-lucide="truck" class="w-5 h-5 text-blue-400 mb-2"></i>
+                <div class="text-xs font-bold text-white leading-tight">SUV</div>
+                <div class="text-[10px] text-gray-400">Ex: Compass, Creta, X1</div>
+              </button>
+
+              <button type="button" class="calc-step-btn vehicle-btn" data-type="Pick-up / Grande" data-multiplier="1.5">
+                <i data-lucide="truck" class="w-5 h-5 text-blue-400 mb-2"></i>
+                <div class="text-xs font-bold text-white leading-tight">Pick-up</div>
+                <div class="text-[10px] text-gray-400">Ex: Hilux, Ranger, RAM</div>
+              </button>
+
+              <button type="button" class="calc-step-btn vehicle-btn" data-type="Superesportivo / Cupê" data-multiplier="1.4">
+                <i data-lucide="gauge" class="w-5 h-5 text-blue-400 mb-2"></i>
+                <div class="text-xs font-bold text-white leading-tight">Esportivo</div>
+                <div class="text-[10px] text-gray-400">Ex: Porsche, Mustang</div>
+              </button>
+
+            </div>
+          </div>
+
+          <!-- Step 2: Desired Services -->
+          <div class="mb-8">
+            <label class="block text-xs font-heading font-bold text-gray-300 uppercase tracking-wider mb-3">
+              2. Escolha os Tratamentos Desejados:
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="service-options">
+              
+              <div class="calc-step-btn service-btn selected" data-id="lavagem" data-base="149" data-name="Lavagem Detalhada Premium" data-time="3 horas" role="checkbox" tabindex="0" aria-checked="true">
+                <div class="flex items-start justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white">Lavagem Detalhada Premium</div>
+                      <div class="text-xs text-gray-400">Snow foam, rodas, descontaminação</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 149</span>
+                </div>
+              </div>
+
+              <div class="calc-step-btn service-btn selected" data-id="polimento" data-base="350" data-name="Polimento Técnico de Correção" data-time="1 a 2 dias" role="checkbox" tabindex="0" aria-checked="true">
+                <div class="flex items-start justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white">Polimento Técnico</div>
+                      <div class="text-xs text-gray-400">Eliminação de micro-riscos e brilho</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 350</span>
+                </div>
+              </div>
+
+              <div class="calc-step-btn service-btn" data-id="vitrificacao" data-base="490" data-name="Vitrificação Cerâmica 9H (3 Anos)" data-time="1 dia" role="checkbox" tabindex="0" aria-checked="false">
+                <div class="flex items-start justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white">Vitrificação Cerâmica 9H</div>
+                      <div class="text-xs text-gray-400">Nano-proteção hidrofóbica extrema</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 490</span>
+                </div>
+              </div>
+
+              <div class="calc-step-btn service-btn" data-id="interna" data-base="220" data-name="Higienização & Detalhamento Interno" data-time="4 horas" role="checkbox" tabindex="0" aria-checked="false">
+                <div class="flex items-start justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="calc-checkbox w-5 h-5 rounded border border-white/20 flex items-center justify-center text-xs">
+                      <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white">Higienização Interna Completa</div>
+                      <div class="text-xs text-gray-400">Vapor, couro, oxi-sanitização</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-heading font-bold text-blue-400">a partir R$ 220</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Calculator Summary Output -->
+          <div class="p-6 rounded-xl bg-black/60 border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+              <div class="text-xs text-gray-400 uppercase tracking-wider mb-1">Estimativa de Investimento:</div>
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl sm:text-4xl font-heading font-black text-white" id="calc-total-price">R$ 499</span>
+                <span class="text-xs text-blue-400 font-semibold" id="calc-estimate-label">(estimativa base)</span>
+              </div>
+              <div class="text-xs text-gray-400 mt-1 flex items-center gap-1.5">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-blue-400"></i>
+                <span>Tempo de execução estimado: <strong class="text-white" id="calc-total-time">1 a 2 dias</strong></span>
+              </div>
+            </div>
+
+            <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="btn-primary w-full sm:w-auto text-center justify-center whitespace-nowrap">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>ENVIAR ORÇAMENTO NO WHATSAPP</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PRICING TIERS
+       ========================================================================= -->
+  <section id="planos" class="py-24 bg-[#080a0f] border-y border-white/5 relative z-10">
+    <div class="container-custom">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+          Pacotes Completos
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight mb-4">
+          PACOTES EXCLUSIVOS WRESTETICA
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base">
+          Escolha o nível ideal de cuidado para a conservação e valorização do seu veículo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1: Essencial -->
+        <div class="card-dark p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-heading font-bold text-gray-400 uppercase tracking-widest mb-2">Manutenção</div>
+            <h3 class="text-2xl font-heading font-extrabold text-white mb-2">ESSENCIAL</h3>
+            <p class="text-xs text-gray-400 mb-6">Lavagem técnica de conservação com proteção imediata.</p>
+            
+            <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-gray-400">R$</span>
+              <span class="text-4xl font-heading font-black text-white">149</span>
+              <span class="text-xs text-gray-400">/ serviço</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-gray-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Lavagem snow foam pH neutro</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Limpeza detalhada de rodas e caixas</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Aspiração interna minuciosa</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Cera líquida com sílica (30 dias)</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20plano%20ESSENCIAL." target="_blank" class="btn-secondary w-full text-center justify-center">
+            AGENDAR ESSENCIAL
+          </a>
+        </div>
+
+        <!-- Tier 2: Premium (Featured) -->
+        <div class="card-dark p-8 flex flex-col justify-between relative border-blue-500/50 shadow-2xl shadow-blue-950/40 bg-gradient-to-b from-blue-950/20 to-transparent">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full bg-blue-600 text-white font-heading font-bold text-[10px] uppercase tracking-widest shadow-lg shadow-blue-600/40">
+            MAIS ESCOLHIDO
+          </div>
+
+          <div>
+            <div class="text-xs font-heading font-bold text-blue-400 uppercase tracking-widest mb-2 mt-1">Restauração & Brilho</div>
+            <h3 class="text-2xl font-heading font-extrabold text-white mb-2">PREMIUM GLOSS</h3>
+            <p class="text-xs text-gray-400 mb-6">Polimento de refino para eliminação de marcas e brilho espelhado.</p>
+            
+            <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-gray-400">R$</span>
+              <span class="text-4xl font-heading font-black text-white">299</span>
+              <span class="text-xs text-gray-400">/ serviço</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-gray-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span class="font-medium text-white">Tudo do Pacote Essencial</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Descontaminação química (Clay Bar)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Polimento técnico para brilho intenso</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Selante de pintura sintético (6 meses)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Condicionamento de plásticos e pneus</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20plano%20PREMIUM%20GLOSS." target="_blank" class="btn-primary w-full text-center justify-center">
+            AGENDAR PREMIUM
+          </a>
+        </div>
+
+        <!-- Tier 3: WR Signature -->
+        <div class="card-dark p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-heading font-bold text-gray-400 uppercase tracking-widest mb-2">Proteção Absoluta</div>
+            <h3 class="text-2xl font-heading font-extrabold text-white mb-2">WR SIGNATURE</h3>
+            <p class="text-xs text-gray-400 mb-6">Vitrificação Cerâmica 9H com correção profunda de pintura.</p>
+            
+            <div class="flex items-baseline gap-1 mb-6 pb-6 border-b border-white/10">
+              <span class="text-xs text-gray-400">R$</span>
+              <span class="text-4xl font-heading font-black text-white">599</span>
+              <span class="text-xs text-gray-400">/ serviço</span>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-gray-300 mb-8">
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span class="font-medium text-white">Tudo do Pacote Premium Gloss</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Polimento em 3 etapas (corte, refino e lustro)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span class="text-white font-semibold">Vitrificação Cerâmica 9H (3 Anos)</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Higienização interna a vapor completa</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-400 flex-shrink-0"></i>
+                <span>Vitrificação de vidros e faróis</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20o%20plano%20WR%20SIGNATURE." target="_blank" class="btn-secondary w-full text-center justify-center">
+            AGENDAR SIGNATURE
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PHOTO GALLERY WITH LIGHTBOX
+       ========================================================================= -->
+  <section id="galeria" class="py-24 relative z-10">
+    <div class="container-custom">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+            Portfólio de Trabalhos
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight">
+            RESULTADOS EM ALTA DEFINIÇÃO
+          </h2>
+        </div>
+        <p class="text-gray-400 text-sm max-w-md">
+          Clique nas imagens para abrir em tela cheia e inspecionar a perfeição de nossos acabamentos.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Gallery 1 -->
+        <div class="gallery-card group h-72" data-caption="Vitrificação Cerâmica 9H & Polimento Técnico em Supercarro no Estúdio WRestetica">
+          <img src="/images/gallery-supercar.jpg" 
+               alt="Supercarro preto em estúdio com reflexo espelhado e vitrificação 9H" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Supercarro WRestetica</span>
+            <p class="text-sm font-semibold text-white">Vitrificação Cerâmica 9H & Polimento Técnico</p>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-card group h-72" data-caption="Efeito Lótus (Water Beading) - Hidro-repelência extrema e escoamento rápido de água em capô vitrificado">
+          <img src="/images/gallery-beading.jpg" 
+               alt="Macro de gotas de água esféricas perfeitas em superfície com proteção cerâmica" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Hidrofobia Extrema</span>
+            <p class="text-sm font-semibold text-white">Efeito Lótus (Water Beading) em Capô</p>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-card group h-72" data-caption="Interior Detailing - Higienização a vapor, hidratação profunda de couro legítimo e proteção UV">
+          <img src="/images/gallery-interior.jpg" 
+               alt="Interior em couro hidratado e console detalhado de carro esportivo" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Interior Detailing</span>
+            <p class="text-sm font-semibold text-white">Tratamento de Couro & Oxi-sanitização</p>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-card group h-72" data-caption="Inspeção Óptica de Precisão - Pintura corrigida e livre de micro-riscos sob luz técnica de LED">
+          <img src="/images/gallery-polishing.jpg" 
+               alt="Inspeção técnica com luz especial LED em pintura espelhada sem hologramas" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Inspeção Óptica</span>
+            <p class="text-sm font-semibold text-white">Pintura sem Hologramas sob LED</p>
+          </div>
+        </div>
+
+        <!-- Gallery 5 -->
+        <div class="gallery-card group h-72" data-caption="Rodas & Pinças de Freio - Descontaminação ferrosa profunda e coating cerâmico resistente a altas temperaturas">
+          <img src="/images/gallery-wheels.jpg" 
+               alt="Roda esportiva forjada preta com pinça de freio vermelha protegida com coating cerâmico" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Rodas & Pinças</span>
+            <p class="text-sm font-semibold text-white">Coating Cerâmico de Altas Temperaturas</p>
+          </div>
+        </div>
+
+        <!-- Gallery 6 -->
+        <div class="gallery-card group h-72" data-caption="Restauração de Óptica & Iluminação - Lentes de policarbonato 100% cristalinas com selagem UV definitiva">
+          <img src="/images/gallery-headlight.jpg" 
+               alt="Farol de LED de matriz cristalino e restaurado com selagem UV" 
+               class="w-full h-full object-cover"
+               referrerpolicy="no-referrer" />
+          <div class="gallery-overlay">
+            <span class="text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-1">Óptica & Iluminação</span>
+            <p class="text-sm font-semibold text-white">Faróis Cristalinos com Proteção UV</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+      <button id="lightbox-close-btn" class="absolute -top-12 right-0 text-white/70 hover:text-white p-2 text-2xl focus:outline-none" aria-label="Fechar">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="relative w-full overflow-hidden rounded-xl bg-black border border-white/10">
+        <img id="lightbox-img" src="" alt="" class="w-full max-h-[75vh] object-contain mx-auto" referrerpolicy="no-referrer" />
+      </div>
+
+      <div id="lightbox-caption" class="text-sm text-gray-300 mt-4 text-center font-medium"></div>
+
+      <!-- Navigation Arrows -->
+      <button id="lightbox-prev-btn" class="absolute left-[-48px] top-1/2 -translate-y-1/2 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-blue-600 text-white transition-colors" aria-label="Foto Anterior">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+
+      <button id="lightbox-next-btn" class="absolute right-[-48px] top-1/2 -translate-y-1/2 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-blue-600 text-white transition-colors" aria-label="Próxima Foto">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FREQUENTLY ASKED QUESTIONS (ACCORDION)
+       ========================================================================= -->
+  <section id="faq" class="py-24 bg-[#080a0f] border-y border-white/5 relative z-10">
+    <div class="container-custom">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-xs font-heading font-bold text-blue-400 uppercase tracking-wider mb-3">
+          Tire Suas Dúvidas
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white tracking-tight mb-4">
+          PERGUNTAS FREQUENTES
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base">
+          Tudo o que você precisa saber sobre nossos processos, garantias e cuidados pós-serviço.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-card active">
+          <button class="faq-toggle" aria-expanded="true">
+            <span>Qual a diferença entre uma lavagem comum e a estética automotiva da WRestetica?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Lavagens convencionais utilizam produtos agressivos (como ácidos e sabões alcalinos) e panos contaminados que causam micro-riscos (swirls) imediatos no verniz. Na WRestetica, usamos produtos nobres de pH equilibrado, luvas de microfibra macias, técnicas sem atrito, desmineralização da água e pincelamento milimétrico em cada friso e emblema.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-card">
+          <button class="faq-toggle" aria-expanded="false">
+            <span>O que é a Vitrificação Cerâmica 9H e quanto tempo ela dura?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden">
+            <p>A vitrificação cerâmica é uma nano-camada de vidro líquido (dióxido de silício - SiO2) que se funde molecularmente ao verniz do carro. Ela cria uma blindagem hidrofóbica com durabilidade entre 1 e 3 anos (com certificado), protegendo contra fezes de pássaros, seiva de árvores, raios ultravioleta e maresia.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-card">
+          <button class="faq-toggle" aria-expanded="false">
+            <span>Quanto tempo meu veículo precisa ficar no estúdio?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden">
+            <p>A lavagem detalhada leva cerca de 3 a 4 horas. Serviços de polimento técnico e vitrificação cerâmica exigem entre 1 a 2 dias completos devido às múltiplas etapas de descontaminação, corte de verniz, refino, lustro e tempo obrigatório de cura do produto cerâmico.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-card">
+          <button class="faq-toggle" aria-expanded="false">
+            <span>O polimento técnico remove muito verniz do meu carro?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden">
+            <p>Não. Antes de encostar qualquer politriz na pintura, medimos a espessura exata do verniz com micrômetro digital em cada peça. Removemos apenas a camada microscópica danificada (cerca de 2 a 3 mícrons), preservando a vida útil original da pintura do seu veículo por muitos anos.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-card">
+          <button class="faq-toggle" aria-expanded="false">
+            <span>Quais são as formas de pagamento aceitas?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden">
+            <p>Aceitamos Pix com desconto especial à vista e todos os principais cartões de crédito com parcelamento em até 12x sem juros.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONVERSION CTA BANNER
+       ========================================================================= -->
+  <section class="py-20 relative z-10 overflow-hidden">
+    <div class="container-custom">
+      <div class="relative rounded-2xl p-10 sm:p-14 bg-gradient-to-r from-blue-900/40 via-blue-950/20 to-black border border-blue-500/30 overflow-hidden text-center shadow-2xl shadow-blue-950/50">
+        
+        <div class="glow-orb glow-blue w-[400px] h-[400px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="relative z-10 max-w-2xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white tracking-tight mb-4">
+            PRONTO PARA ELEVAR O PADRÃO DO SEU CARRO?
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base mb-8">
+            Agende hoje mesmo seu atendimento exclusivo. Vagas limitadas por semana para garantir atenção artesanal a cada detalhe.
+          </p>
+          <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Quero%20agendar%20um%20atendimento%20exclusivo%20na%20WRestetica." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-primary text-base py-4 px-8 shadow-xl shadow-blue-600/40">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>FALAR COM UM ESPECIALISTA NO WHATSAPP</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="bg-black pt-16 pb-12 border-t border-white/10 relative z-10">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Col -->
+        <div class="md:col-span-2 space-y-4">
+          <a href="#hero" class="flex items-center gap-3.5 group">
+            <div class="relative flex-shrink-0">
+              <img src="/images/logo.png" 
+                   alt="WRestetica Logo" 
+                   class="w-14 h-14 rounded-full object-cover border-2 border-blue-400/50 shadow-lg shadow-blue-900/60 group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="flex flex-col">
+              <div class="flex items-center">
+                <span class="font-heading font-black tracking-wider text-2xl text-white">WR</span>
+                <span class="font-heading font-light tracking-wide text-xl text-gray-200 ml-1">estética</span>
+              </div>
+              <span class="text-[10px] tracking-[0.28em] text-blue-400 font-extrabold uppercase mt-0.5">ESTÉTICA AUTOMOTIVA</span>
+            </div>
+          </a>
+          <p class="text-gray-400 text-sm max-w-sm leading-relaxed">
+            Estúdio especializado em estética automotiva de alto padrão, polimento técnico de precisão e vitrificação cerâmica de alta durabilidade.
+          </p>
+          
+          <!-- Social Media Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <!-- Instagram Link Button -->
+            <a href="https://instagram.com" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-900/40 via-pink-900/40 to-amber-900/30 border border-pink-500/40 hover:border-pink-400 text-white text-xs font-heading font-bold uppercase tracking-wider hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-950/40" 
+               aria-label="Instagram da WRestetica">
+              <svg class="w-5 h-5 text-pink-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+              <span>Instagram</span>
+            </a>
+
+            <!-- WhatsApp Link Button -->
+            <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20WRestetica!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20est%C3%A9tica%20automotiva." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-emerald-950/40 border border-emerald-500/40 hover:border-emerald-400 text-white text-xs font-heading font-bold uppercase tracking-wider hover:scale-105 transition-all duration-300 shadow-lg shadow-emerald-950/40" 
+               aria-label="WhatsApp da WRestetica">
+              <svg class="w-5 h-5 text-emerald-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xs font-heading font-bold text-white uppercase tracking-wider mb-4">Navegação</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400">
+            <li><a href="#hero" class="hover:text-blue-400 transition-colors">Início</a></li>
+            <li><a href="#servicos" class="hover:text-blue-400 transition-colors">Serviços Especializados</a></li>
+            <li><a href="#comparacao" class="hover:text-blue-400 transition-colors">Antes & Depois</a></li>
+            <li><a href="#calculadora" class="hover:text-blue-400 transition-colors">Calculadora de Orçamento</a></li>
+            <li><a href="#planos" class="hover:text-blue-400 transition-colors">Planos & Preços</a></li>
+            <li><a href="#faq" class="hover:text-blue-400 transition-colors">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-xs font-heading font-bold text-white uppercase tracking-wider mb-4">Atendimento & Local</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-1"></i>
+              <span>Recife, Pernambuco - Brasil</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-1"></i>
+              <span>Segunda a Sábado<br /><strong class="text-white">08:00 às 18:00</strong></span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-400 flex-shrink-0 mt-1"></i>
+              <span class="text-white font-medium">+55 (81) 90000-0000</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 WRestetica Automotiva. Todos os direitos reservados.</p>
+        <p class="text-gray-400">Desenvolvido para entusiastas automotivos exigentes</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE)
+       ========================================================================= -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1%20WRestetica!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20est%C3%A9tica%20automotiva." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     id="floating-whatsapp-btn"
+     class="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-600 text-white font-heading font-bold text-xs uppercase tracking-wider shadow-2xl shadow-emerald-950/80 hover:bg-emerald-500 hover:scale-105 transition-all duration-300"
+     aria-label="Falar no WhatsApp">
+    <div class="relative flex items-center justify-center">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-300 rounded-full"></span>
+    </div>
+    <span class="hidden sm:inline">ORÇAMENTO NO WHATSAPP</span>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script type="module" src="/script.js"></script>
+</body>
+</html>

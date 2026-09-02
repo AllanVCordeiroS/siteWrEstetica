@@ -1,0 +1,6 @@
+{
+  "name": "BLACKLINE Auto Detailing",
+  "description": "WRestetica: Estética automotiva de alto padrão, polimento técnico, vitrificação cerâmica 9H e proteção veicular.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
